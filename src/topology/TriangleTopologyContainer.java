@@ -1,6 +1,6 @@
 package topology;
 
-import geometry.Triangle;
+import primitive.Triangle;
 
 public class TriangleTopologyContainer<T> extends TopologyContainer<T, Triangle> {
 

@@ -3,10 +3,10 @@ package topology;
 import java.util.ArrayList;
 import java.util.List;
 
-import geometry.Edge;
-import geometry.Face;
-import geometry.Quad;
-import geometry.Triangle;
+import primitive.Edge;
+import primitive.Face;
+import primitive.Quad;
+import primitive.Triangle;
 
 public abstract class BaseMeshTopology<T> implements Topology {
 	

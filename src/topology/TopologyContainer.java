@@ -3,11 +3,11 @@ package topology;
 import java.util.ArrayList;
 import java.util.List;
 
-import geometry.Edge;
-import geometry.Face;
-import geometry.Polygon;
-import geometry.Quad;
-import geometry.Triangle;
+import primitive.Edge;
+import primitive.Face;
+import primitive.Polygon;
+import primitive.Quad;
+import primitive.Triangle;
 
 public class TopologyContainer<T, P extends Polygon> extends BaseMeshTopology<T> {
 	

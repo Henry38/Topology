@@ -1,4 +1,4 @@
-package geometry;
+package primitive;
 
 public class Quad extends Polygon {
 	
