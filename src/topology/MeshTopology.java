@@ -54,6 +54,12 @@ public class MeshTopology<T> extends BaseMeshTopology<T> {
 		this.positions.add(position);
 	}
 	
+	public void addPositions(T ... positions) {
+		for (T position : positions) {
+			addPosition(position);
+		}
+	}
+	
 	public void addEdge(int a, int b) {
 		Edge edge = new Edge(a, b);
 		if (getEdges().contains(edge)) {
