@@ -73,6 +73,20 @@ public abstract class BaseMeshTopology<T> implements Topology {
 		return getFaces().get(i);
 	}
 	
+	//** Topology modifiers **//
+	
+	public void clear() {
+		clearTopology();
+		getPositions().clear();
+	}
+	
+	public void clearTopology() {
+		getEdges().clear();
+		getTriangles().clear();
+		getQuads().clear();
+		getFaces().clear();
+	}
+	
 	//** Features **//
 	
 	public List<Edge> getEdgesAroundVertex(T position) {
