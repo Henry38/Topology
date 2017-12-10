@@ -106,9 +106,10 @@ public class MeshTopology<T> extends BaseMeshTopology<T> {
 			if (getFaces().contains(face)) {
 				return;
 			}
-			for (int i = 0; i < points.length; i++) {
-				int j = (i+1) % points.length;
-				addEdge(i, j);
+			for (int i = 0; i < length; i++) {
+				int a = points[i];
+				int b = points[(i+1) % length];
+				addEdge(a, b);
 			}
 			this.getFaces().add(face);
 		}
